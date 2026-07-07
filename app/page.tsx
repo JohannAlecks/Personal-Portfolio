@@ -1,65 +1,79 @@
-import Image from "next/image";
+import Header from "./components/Header"
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main>
+      <Header />
+
+      <div className="max-w-2xl mx-auto px-6 pb-16">
+
+                {/* About */}
+        <section id="about" className="mb-16">
+          <h2 className="text-xl font-medium mb-4">About me</h2>
+          <p className="text-gray-500 leading-relaxed">
+            Motivated Computer Engineering student with a strong focus on software development and backend systems. 
+            Proficient in building applications using technologies such as Python, Flutter (Dart), Next.js, and HTML, 
+            with a solid understanding of database integration and system design.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+          <p className="text-gray-500 leading-relaxed mt-4">
+            Gained hands-on experience in technical support and networking during an internship at Clark International 
+            Airport Corporation (CIAC) – MIS Department, strengthening problem-solving skills and real-world system understanding.
+          </p>
+          <p className="text-gray-500 leading-relaxed mt-4">
+            Skilled in writing clean, efficient code and developing scalable solutions, with a strong foundation in 
+            programming and software architecture. Demonstrates strong analytical thinking, adaptability, and a 
+            collaborative mindset, with a keen interest in backend development, APIs, and full-stack applications.
+          </p>
+        </section>
+
+        {/* Projects */}
+        <section id="projects" className="mb-16">
+          <h2 className="text-xl font-medium mb-4">Projects</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-medium mb-2">ETL Pipeline</h3>
+              <p className="text-sm text-gray-500 mb-3">Ingests data from a public API, transforms it, and loads into PostgreSQL on a schedule.</p>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {["Python", "Airflow", "PostgreSQL"].map(tag => (
+                  <span key={tag} className="text-xs px-2 py-1 bg-gray-100 rounded-full text-gray-600">{tag}</span>
+                ))}
+              </div>
+              <a href="#" className="text-sm text-blue-600">GitHub →</a>
+            </div>
+            <div className="border border-gray-200 rounded-xl p-5">
+              <h3 className="font-medium mb-2">REST API</h3>
+              <p className="text-sm text-gray-500 mb-3">FastAPI backend for a personal finance tracker with auth, migrations, and tests.</p>
+              <div className="flex flex-wrap gap-2 mb-3">
+                {["FastAPI", "SQLAlchemy", "Docker"].map(tag => (
+                  <span key={tag} className="text-xs px-2 py-1 bg-gray-100 rounded-full text-gray-600">{tag}</span>
+                ))}
+              </div>
+              <a href="#" className="text-sm text-blue-600">GitHub →</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section id="skills" className="mb-16">
+          <h2 className="text-xl font-medium mb-4">Skills</h2>
+          <div className="flex flex-wrap gap-2">
+            {["Python", "Flutter (Dart)", "Next.js", "Java", "HTML", "Networking", "AI Assisted Prompting", "Adaptability and Collaborative Teamwork"].map(skill => (
+              <span key={skill} className="text-sm px-3 py-1 border border-gray-200 rounded-full text-gray-600">{skill}</span>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact">
+          <h2 className="text-xl font-medium mb-4">Get in touch</h2>
+          <div className="flex flex-wrap gap-3">
+            <a href="mailto:your@email.com" className="text-sm px-4 py-2 border border-gray-200 rounded-lg text-gray-600">Email</a>
+            <a href="#" className="text-sm px-4 py-2 border border-gray-200 rounded-lg text-gray-600">GitHub</a>
+            <a href="#" className="text-sm px-4 py-2 border border-gray-200 rounded-lg text-gray-600">LinkedIn</a>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  )
 }
