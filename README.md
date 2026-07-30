@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Johann Alecksandrei G. Factora
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js and Tailwind CSS to showcase my background, skills, experience, and contact information as a junior developer.
 
-First, run the development server:
+## Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Demo: https://your-domain.vercel.app
+
+## Features
+
+- Responsive hero section with a polished personal introduction
+- About section highlighting education and experience
+- Qualifications section with interactive tabs for skills, certifications, and education
+- Experience section with a clean layout for internships and growth
+- Contact section with a working form integration
+- Modern dark UI with subtle animations and glassmorphism styling
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+
+## Installation
+
+1. Clone the repository
+   ```bash
+   git clone <your-repo-url>
+   cd portfolio
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Run the development server
+   ```bash
+   npm run dev
+   ```
+4. Open http://localhost:3000 in your browser
+
+## Usage
+
+- Update your personal content in the section components under app/components/sections
+- Replace placeholder links and contact details as needed
+- Add real project content when you have completed more work
+
+## Project Structure
+
+```text
+app/
+  components/
+    sections/        # Page sections such as hero, about, contact, and qualifications
+    dashboard/       # Dashboard demo components
+  dashboard/         # Dashboard route
+  globals.css        # Global styles
+  layout.tsx         # Root layout
+  page.tsx           # Home page
+public/              # Static assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What I Learned
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- How to structure a Next.js portfolio project for clarity and maintainability
+- How to build reusable section components in a production-style app
+- How to improve layout and user experience with responsive design and motion
+- How to present technical growth in a realistic and recruiter-friendly way
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Improvements
 
-## Learn More
+- Connect the contact form to a reliable backend or email service
+- Add blog or writing content to show deeper thinking
+- Improve SEO with metadata, Open Graph images, and structured content
 
-To learn more about Next.js, take a look at the following resources:
+## Recommended Commit Messages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- feat: add interactive qualifications tabs
+- feat: add projects section to portfolio homepage
+- style: improve dark glassmorphism UI and spacing
+- docs: add professional README for portfolio project
+- refactor: reorganize components into section-based structure
+- fix: update contact form wiring and email display
