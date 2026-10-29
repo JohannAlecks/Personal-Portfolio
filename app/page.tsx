@@ -3,6 +3,7 @@ import HeroSection from "./components/sections/HeroSection"
 import AboutSection from "./components/sections/AboutSection"
 import QualificationsSection from "./components/sections/QualificationsSection"
 import ExperienceSection from "./components/sections/ExperienceSection"
+import ProjectsSection from "./components/sections/ProjectsSection"
 import ContactSection from "./components/sections/ContactSection"
 import CTASection from "./components/sections/CTASection"
 
@@ -17,6 +18,7 @@ export default function HomePage() {
         <HeroSection />
         <AboutSection />
         <QualificationsSection />
+        <ProjectsSection />
         <ExperienceSection />
         <ContactSection />
         <CTASection />

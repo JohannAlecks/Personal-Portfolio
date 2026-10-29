@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"
 const NAV_ITEMS = [
   { href: "#about", label: "About" },
   { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
 ]
@@ -68,7 +69,7 @@ export default function Header() {
                 width={160}
                 height={160}
                 quality={100}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover object-[center_32%]"
                 priority
               />
             </div>

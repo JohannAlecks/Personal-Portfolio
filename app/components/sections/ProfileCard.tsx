@@ -24,7 +24,7 @@ export default function ProfileCard() {
             height={740}
             quality={100}
             priority
-            className="h-[360px] w-full object-cover transition-transform duration-500 hover:scale-[1.03]"
+            className="h-[360px] w-full object-cover object-[center_32%] transition-transform duration-500 hover:scale-[1.03]"
           />
           <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,transparent_40%,rgba(4,8,14,0.55)_100%)]" />
         </div>
