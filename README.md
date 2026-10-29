@@ -19,7 +19,7 @@ Visit the live portfolio at [personal-portfolio-johann9.vercel.app](https://pers
 ## Features
 
 - Responsive portfolio experience for desktop and mobile devices
-- Hero, about, qualifications, experience, and contact sections
+- Hero, about, qualifications, projects, experience, and contact sections
 - Interactive qualifications tabs for skills, certifications, and education
 - Project and technical background presentation
 - Contact form powered by Formspree with spam protection
@@ -63,14 +63,14 @@ Screenshots can be added here as the portfolio evolves. Recommended captures inc
 
 ## Selected Projects
 
-### Ticketing System
+### SupportFlow — IT Support & Service Desk
 
-A full-stack support ticket management system where users can submit and monitor tickets, agents can manage assigned requests, and administrators can manage users, assignments, workloads, and system activity.
+A full-stack ticketing platform with role-based workflows for requesters, agents, and administrators. Features include ticket assignment and history, notifications, SLA tracking, customer satisfaction ratings, saved views, and user and department administration.
 
-**Technologies:** React, Vite, Node.js, Express.js, TypeScript, JavaScript, PostgreSQL, Prisma ORM, JWT, Tailwind CSS
+**Technologies:** React, Vite, JavaScript, Node.js, Express.js, PostgreSQL, Prisma ORM, JWT, Tailwind CSS
 
-- GitHub: Repository link coming soon
-- Live demo: Not deployed yet
+- [GitHub repository](https://github.com/JohannAlecks/IT-Ticketing-System)
+- Status: Private beta preparation; no live demo yet
 
 ### Personal Portfolio Website
 
